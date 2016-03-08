@@ -1,0 +1,3 @@
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area lets you add just a subset of files from the working directory to a given commit so the commit is just about one logical change.
