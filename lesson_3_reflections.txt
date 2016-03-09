@@ -4,3 +4,8 @@ Remote repositories are good for:
 - backing up your work so its not all on one computer
 - making your work visible online to other users or contributors
 - working with other contributors on the same project and keeping files and updates in sync
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+Changes made by coworkers on the remote repository may break changes you are working on in your local repository, so you may want to check first that conflicts dont arise before pulling from the remote repository.
+
