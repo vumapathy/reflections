@@ -1,3 +1,23 @@
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 Staging area lets you add just a subset of files from the working directory to a given commit so the commit is just about one logical change.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+Manually add the files for a logical change using "git add", then compare the staging area to working directory using "git diff" to make sure you added the right files.  Then do a final comparison of the staging area to the latest commit using "git diff --staged" to verify that you are updating what you want to update, then commit.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branches can be helpful for when you want to maintain demo-ability while experimenting on new features.  You would in this case have one master branch that is generally kept working and one branch for your experimental feature.
+
+How do the diagrams help you visualize the branch structure?
+
+They show what the parent commit is for each commit, where each path leading from a leaf to the root is a branch, and unreachable commits are represented by nodes that cant be reached by traversing the graph towards the root.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches together forms a new master that includes commits from both its parents, ordered by timestamp.  We order by timestamp so that we can have a single system for resolving changes made on the same file.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Merging automatically saves time in cases when code changes were not in the same place and likely not related.  However, if everything were automatic, changes in the same place in the code would likely be incorrectly merged since there are subtleties that the developer needs to look at in this case.
