@@ -9,3 +9,6 @@ Why might you want to always pull changes manually rather than having Git automa
 
 Changes made by coworkers on the remote repository may break changes you are working on in your local repository, so you may want to check first that conflicts dont arise before pulling from the remote repository.
 
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Forks occur only on the remote server, and you wont ever modify the code in the repository you forked.  Clones can happen locally or from remote to local, and when you clone a repository you wont modify it immediately.  Once you clone a repository, you can branch off a commit (this happens only locally, whereas forking, a similar model, only happens remotely).  Unlike forks, branches can be merged later.
