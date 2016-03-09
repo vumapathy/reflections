@@ -1,1 +1,6 @@
+When would you want to use a remote repository rather than keeping all your work local?
 
+Remote repositories are good for:
+- backing up your work so its not all on one computer
+- making your work visible online to other users or contributors
+- working with other contributors on the same project and keeping files and updates in sync
