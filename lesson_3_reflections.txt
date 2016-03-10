@@ -12,3 +12,15 @@ Changes made by coworkers on the remote repository may break changes you are wor
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
 
 Forks occur only on the remote server, and you wont ever modify the code in the repository you forked.  Clones can happen locally or from remote to local, and when you clone a repository you wont modify it immediately.  Once you clone a repository, you can branch off a commit (this happens only locally, whereas forking, a similar model, only happens remotely).  Unlike forks, branches can be merged later.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+The benefit of this is that you wont get hit by as many conflicts to resolve when you fetch and merge the remote later on.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+Without using Git or Github, I'd probably be emailing files like it was the stone age.  Or maybe using file syncing software.  Either way, it would be less structured in terms of keeping the files up to date and understanding the revision history of the code base.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+Youd almost always want to make a change in a separate branch since you de-risk breaking the master when collaborating with others.  This requires more work doing merges / pull requests, but its almost required when more than one person is collaborating on a project.
